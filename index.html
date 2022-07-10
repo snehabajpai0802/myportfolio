@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>portfolio</title>
+    <style>
+       body{
+        background-image: url(./public/images/PORTFOLIO2.jpg);
+        height: 500px;
+        background-repeat: no-repeat;
+         background-size:cover;
+       }
+       header{
+        display: flex;
+        justify-content: space-between;
+        font-family:algerian regular;
+        margin-top: 10px;
+        position:sticky;
+        
+        
+       } 
+       header span{
+        margin-right:20px;
+        font-size: larger;
+        color:#22577A;
+         padding: 30px;
+         padding-top: 10px;
+         
+        
+
+       }
+       .portfolio{
+        font-size:40px;
+        color:#38A3A5;
+        text-shadow: 5px 10px 4px #80ED99;
+        padding-left: 10px;
+        
+       
+       }
+       .container{
+            font-size: 30px;
+            font-family: Arial;
+            text-align: center;
+            width: 600px;
+            justify-content:end;
+            align-items:baseline;
+            height: 300px;
+            padding: 50px;
+            margin-left: 600px;
+            font-family:harlow solid italic;
+            margin-top:50px;
+            color:#22577A;
+            text-shadow: 1px 1px 5px #38A3A5;
+            animation-name: SlideIn;
+            animation-duration: 5s;
+            animation-iteration-count:1;
+            animation-direction: alternate;
+       }
+       h1{
+        font-family: Georgia;
+        color:#38A3A5;
+        text-shadow: 4px 4px 6px #38A3A5 ;
+       }
+       .icons{
+        margin-top:50px;
+        font-size: larger;
+        color:#22577A;
+       }
+    .icons span{
+        padding-left: 20px;
+    }
+    .content{
+        display: block;
+        text-align: justify;
+        padding: 5px;
+        font-style: italic;
+        font-weight: bolder;
+        background-color:#38A3A5;
+        height: 150px;
+    }
+    p{
+        margin-top:20px;
+        color:#22577A;
+        font-weight: bold;
+padding-top: 5px;
+    }
+    a:link{
+        text-decoration: none;
+        color: #22577A;
+    }
+    a:visited{
+        color:#22577A;
+    }
+    a:active{
+        color:#22577A;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: 6fr 3fr 3fr;
+        background-color: #22577A;
+    }
+    .me{
+        border: 5px double #80ED99;
+        padding-top: 120px;
+        margin: 20px;
+        font-size: 25px;
+    }
+    h3{
+        color:#38A3A5;
+        font-family:Georgia;
+        font-size: 40px;
+        text-decoration: underline dotted #38A3A5;
+        
+    }
+    .meinfo{
+        color:#80ED99;
+        font-weight: bold;
+        font-style: italic;
+        justify-content: space-between;
+    }
+    button{
+        padding: 10px;
+        margin: 40px;
+        margin-left: 200px;
+         background-color:#80ED99;
+    }
+.education{
+    border: 5px double #80ED99;
+        padding-top: 60px;
+        margin: 20px;
+        color:#57CC99;
+        font-family:Georgia;
+}
+h4{
+    color:#38A3A5;
+}
+.skill{
+    border: 5px double #80ED99;
+        padding-top: 65px;
+        margin: 20px;
+}
+h2{
+    color:#38A3A5;
+    text-decoration: underline dotted #57CC99;
+}
+ul{
+    color:#80ED99;
+}
+h4{
+    border-bottom: 4px double #22577A;
+}
+.contact{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    background-color: #80ED99;
+}
+.details{
+    border:5px double #22577A;
+    padding: 40px;
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom:50px ;
+    color:#22577A;
+    font-weight: bold;
+}
+.details div{
+    margin-top:15px;
+}
+.contactme{
+    border:5px double #22577A;
+    padding: 40px;
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom:50px;
+    color:#22577A;
+    font-weight: bold;
+}
+form{
+    display:grid;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+input{
+    margin-bottom: 15px;
+    background-color:#38A3A5;
+    box-shadow: 2px 2px 2px #22577A;
+}
+input::placeholder{
+    color:#22577A;
+    padding: 20px;
+}
+form button{
+    background-color:#38A3A5;
+    margin-right: 160px;
+}
+.colorb{
+    display:flex;
+    justify-content: space-around;
+    padding: 30px;
+    height: 500px;
+    background-color: #22577A;
+    color: #80ED99;
+    padding-top: 70px;
+}
+@keyframes SlideIn {
+            from {
+                margin-right: 120%;
+                margin-top: 50px;
+                width: 150px;
+                height: 200px;
+            }
+            50% {
+               transform: rotate(360deg);
+               width: 600px;
+               height: 600px;
+            }
+            to {
+               margin-left:600px;
+               margin-top: 50px;
+               width: 600px;
+               height: 300px;
+            }
+        }
+       
+    </style>
+       
+</head>
+<body>
+<header>
+    <div class="portfolio">
+        PORTFOLIO
+    </div>
+    <div>
+        <span><a href="portfolio.html">Home</a></span>
+        <span><a href="#aboutus">About</a></span>
+        <span><a href="#p1">Project</a></span>
+        <span><a href="#c1">Contact Us</a></span>
+    </div>
+    
+</header>
+<div class="container">
+    <h1>SNEHA BAJPAI</h1>
+    <div>FULL STACK WEB DEVELOPER</div>
+    <div class="icons">
+        <span class="bi bi-instagram"></span>
+        <span class="bi bi-facebook"></span>
+        <span class="bi bi-linkedin"></span>
+        <span class="bi bi-twitter"></span>
+    </div>
+</div>
+ <div class="content">
+        <p>Hard-working web developer with a flair for creating elegant solutions in the least amount of time. Developed an ecommerce webapp, customer web portal, documentary and donations webapp for a local charity. Passionate about software architecture. Regular attendee of web developer meetups and hackathons.</p>
+    </div>
+<div class="about" id="aboutus">
+<div class="me"><h3>More About SNEHA BAJPAI</h3>
+<div class="meinfo">SNEHA BAJPAI Full Stack Web Developer completed graduation with BSC COMPUTER SCIENCE in 2022.Hard-working web developer with a flair for creating elegant solutions in the least amount of time.</div>
+<div><button type="button" href="#c1">contact us</button></div>
+</div>
+<div class="education"><h2>EDUCATION</h2>
+ <ul>
+    <li><h4>HIGH EDUCATION</h4>
+    <div>NACHIKETA SENIOR SECONDARY SCHOOL,VIJAY NAGAR,JABALPUR,MP</div>
+    <div>CGPA:9</div></li>
+    <li><h4>HIGHER EDUCATION</h4>
+        <div>NACHIKETA SENIOR SECONDARY SCHOOL,VIJAY NAGAR,JABALPUR,MP</div>
+    <div>PERCENTAGE:74.2</div></li>
+    <li><h4>GRADUATION</h4>
+    <div>ST.ALOYSIUS' COLLEGE()AUTONOMOUS)JABALPUR</div>
+<div> BSC COMPUTER SCIENCE</div>
+<DIV>PERCENTAGE:72.4</DIV></li>
+ </ul>
+</div>
+<div class="skill"><h2>INTERMEDIATE</h2>
+    <ul><li><h4>PROGRAMMING LANGUAGE</h4>
+<ul><li>C</li>
+<li>C++</li>
+<LI>JAVA</LI>
+<LI>PHP</LI>
+<LI>JAVASCRIPT</LI></ul></li>
+<LI><H4>FRAMEWORKS</H4>
+<UL><LI>HTML</LI>
+<LI>CSS</LI>
+<LI>BOOTSTRAP</LI>
+<LI>SASS</LI>
+NODEJS</UL></LI>
+<LI><H4>DATABASE</H4>
+<UL><LI>MONGODB</LI></UL></LI>
+     </ul>
+</div>
+ </div>
+ <div class="project1" id="p1">
+    <div class="colorb">
+        <div><h6>click the picture</h6>
+       <a href="shopper.html"><img src="./public/images/G1.jpg" height="300px" width="300px"></a></div>
+       <div><h6>click the picture</h6>
+    <a href="screen.html"><img src="./public/images/WEB1.jpg" height="300px" width="300px"></a></div>   
+    </div>
+ </div>
+ <div class="contact" id="c1">
+    <div class="details">
+        <div><h4 class="bi bi-telephone-inbound-fill"> MOBILE NUMBER</h4>
+        +91-7987283584</div>
+        <div><h4 class="bi bi-envelope-fill">EMAIL ADDRESS</h4>
+        bajpaisneha08@gmail.com</div>
+        <div><h4 class="bi bi-geo-alt-fill">ADDRESS</h4>
+        JABALPUR (M.P)</div>
+    </div>
+    <div class="contactme">
+        <form><h3>CONTACT US</h3>
+        <input type="text" name="textName" placeholder="Name">
+    <input type="email" name="textEmail" placeholder="Email">
+<input type="number" name="numberName" placeholder="Phone">
+<input type="textarea" name="textMessage" placeholder="Message">
+<button type="button">SEND MESSAGE</button></form>
+    </div>
+ </div>
+</body>
+</html>

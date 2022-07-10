@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head><title>screenstyle</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+    a:link{
+        color: #53BF9D;
+        text-decoration: none;
+    }
+    a:visited{
+        color:#BD4291;
+    }
+    aside:hover{
+        transition: 0s;
+        font-size: 50px;
+    }
+    header{}
+    .tophead{
+        display:flex;
+        justify-content:space-evenly;
+        padding:5px;
+        background-color: #53BF9D;
+         
+     }.tophead span{
+        margin-right: 10px;
+        padding-left: 10px;
+    }
+    .thead{
+        background-color: #FFC54D;
+        color: #53BF9D;
+       box-shadow: 5px 5px 10px #FFC54D;
+       display: flex;
+       justify-content:space-evenly;
+       padding:10px;
+}
+footer{
+    display: grid;
+        grid-template-columns:4fr 4fr 4fr;
+        background-color:#53BF9D;
+}
+    
+     
+    
+     @media screen and (orientation:landscape){
+        .container1{
+            display: grid;
+                grid-template-columns:3fr 6fr 3fr ;
+           } 
+           header {
+                grid-row: 1;
+                grid-column: 1/4;}
+            nav{
+                grid-row:3;
+                grid-column:1;
+                background-color: #F94C66;
+                 
+            } 
+            main{
+                grid-row: 3;
+                grid-column:2;
+                background-image: url(images/fashion1.jpg);
+               background-size:cover;
+               height:450px;
+             }
+             aside{
+                grid-row:3;
+                grid-column:3;
+                background-color: #F94C66;
+            
+             }
+             select{
+                background-color:#FFC54D;
+             }
+             footer{
+                
+                grid-row:5;
+                grid-column:1/4;
+                display: grid;
+        grid-template-columns:4fr 4fr 4fr;
+        background-color:rgba(189, 66, 145,0.4);
+             }
+             article{
+                grid-row:2;
+                grid-column:1/4;
+                color:#FFC54D;
+text-shadow: 2px 2px 5px #FFC54D ;
+background-color:#F94C66;
+width:100%;
+height:70px;
+height:40px;
+padding: 10px;
+font-size: larger;
+             }
+             
+  .card1{
+    display: flex;
+    flex:space;
+    background-color: #FFC54D;
+    grid-row:4;
+    grid-column: 1/4;
+  }
+  .tophead{
+        display:flex;
+        justify-content: space-between;
+        padding:10px;
+        background-color: #53BF9D;
+        padding-left:0px;
+        
+    }.tophead span{
+        margin-right: 10px;
+        padding-left: 10px;
+    }
+    .thead{
+        background-color: #FFC54D;
+        color: #53BF9D;
+       box-shadow: 5px 5px 10px #FFC54D;
+       display: flex;
+       justify-content: space-between;
+       padding: 25px;
+    }    
+        }
+        @media screen and(orientation:portraite) {
+         .container1{
+            display: grid;
+                grid-template-columns:12fr ;
+           } 
+           header {
+            
+                grid-row:1;
+                }
+            nav{
+                grid-row:3;
+            } 
+            main{
+                grid-row: 4;
+                background-image: url(images/fashion1.jpg);
+                height: 50px;
+                
+             }
+             aside{
+                grid-row:5;        
+        }
+        .card1{
+            display: grid;
+            grid-row:5 ;
+        }
+        article{
+            color:#FFC54D;
+text-shadow: 2px 2px 5px #FFC54D ;
+background-color:#F94C66;
+width:100%;
+height:70px;
+height:40px;
+padding: 10px;
+font-size: larger;
+grid-row:2;
+        }
+        footer{
+            grid-row:6;
+            display: grid;
+        grid-template-columns:4fr 4fr 4fr;
+        background-color: #53BF9D;
+        }
+        
+        
+        }
+    
+    </style></head>
+    <body>
+        <div class="container1">
+            <header><div class="tophead">
+                <div><span class="bi bi-truck"></span><span>FREE SHIPPING WORLDWID </span> </div>
+        <div class="topsub"><span>Shipping</span>
+        <span>FAQ</span><span>Contact</span></div>
+        <div><span class="bi bi-facebook"></span><span class="bi bi-twitter"></span><span class="bi bi-instagram"></span></div>
+        </div>
+        <div class="thead">
+            <div class="brand-name"> ShOpPeR  </div>
+            <div class="nav-item"><span><a href="home.html">Home</a></span>
+               <span> <a href="table.html">Catalog</a></span>
+               <span><a href="amazon-image.html">Shop</a></span>
+               <span><a href="page.html">Pages</a></span>
+              <span><a href="blog.html">Blog</a></span>
+              <span><a href="docs.html">Docs</a></span>  
+            </div>
+            <div class="nav-icon">
+                <span class="bi bi-search"></span>
+                <span class="bi bi-person"></span>
+                <span class="bi bi-heart"></span>
+                <span class="bi bi-cart"></span>
+            </div></header>
+            <article><marquee scrollamount="8" direction="right"  onmouseover="this.stop()"onmouseout="this.start()"> 10% off in all categories.</marquee></article>
+           <nav>
+                <select><optgroup>women's</optgroup>
+                <option>tops</option>
+            <option>straight fit jeans</option>
+        <options>shades</options>
+    <option>bags</option>
+<option>ethnic</option>
+<option>casuals</option>
+<optgroup>men's</optgroup>
+                <option>t-shirts</option>
+            <option> jeans</option>
+        <options>shades</options>
+    <option>bags</option>
+<option>ethnic</option>
+<option>casuals</option>
+<optgroup>kids</optgroup>
+                <option>t-shirts</option>
+            <option> jeans</option>
+        <options>shades</options>
+    <option>bags</option>
+<option>ethnic</option>
+<option>casuals</option></select>
+</nav>
+<main>
+    <h5>FASHION</h5>
+</main>
+<aside>
+     <h5 align="center">CAPS</h5>
+     <a href="#"> click here to buy caps</a><br>
+     buy funky caps 
+</aside>
+<div class="card1">
+    <img src="./images/fashion.jpg">
+    <img src="./images/c1.jpg">
+    <img src="./images/cap1.jpg">
+    <img src="./images/g1.jpg">
+    <img src="./images/s1.jpg">
+</div>
+<footer>
+    <ul><h6>company</h6>
+       <li>our story</li>
+      <li>Careers</li>
+<li>Press</li>
+        <li>Contact</li></ul>
+        <ul><h6>HELP CENTER</h6>
+            <li>Shipping</li>
+            <li>Returns</li>
+           <li> Payment</li>
+          <li>FAQ</li></ul>
+          <div>
+            <div><h6>SUBSCRIBE TO NEWSLETTER</h6></div>
+           <div class="input-group"><input type="text" class="input-group-text" placeholder="your email">
+            <button type="button" class="input-group-lg">subscribe</button></div>
+            <div><span class="bi bi-facebook"></span>
+            <span class="bi bi-instagram"></span>
+            <span class="bi bi-twitter"></span></div>
+        </div>
+</footer></div>
+    </body>
+</html>
